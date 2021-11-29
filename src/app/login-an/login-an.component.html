@@ -1,0 +1,32 @@
+
+<html>
+    <body class="ms-3">
+        
+
+            <div class="mb-3">
+                
+                <label class="form-label" for="name">Username: </label>
+                <input class="form-control w-50" id="username" value="" onchange="un()" [(ngModel)]="Userinfo.Username" placeholder="Hossein">
+                
+            </div>
+            
+            <p></p>
+
+            <div class="mb-3">
+
+                <label class="form-label" for="name">password: </label>
+                <input class="form-control w-50" id="password" value="" onchange="ps()" [(ngModel)]="Userinfo.Password" placeholder="@zargarian@">
+                
+            </div>
+
+            <button (click)="onClick()" type="submit" id="name" class="btn btn-primary mb-3">Submit</button>
+        
+                 
+        
+                
+        <h6> Your username : {{ Userinfo.Username}} </h6>
+        <h4></h4>
+        <h6> Your password : {{ Userinfo.Password}} </h6>
+    </body> 
+</html>
+
